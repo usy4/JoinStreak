@@ -2,7 +2,7 @@
 
 namespace usy4\JoinStreak;
 
-use usy4\JoinStreak\commands\JoinStreak;
+use usy4\JoinStreak\commands\JoinStreakCommand;
 use usy4\JoinStreak\EventListener;
 
 use CortexPE\Commando\PacketHooker;
