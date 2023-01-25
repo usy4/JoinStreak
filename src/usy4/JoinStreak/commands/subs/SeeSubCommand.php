@@ -1,12 +1,12 @@
 <?php
 
-namespace usy4\AboutMe\commands\subs;
+namespace usy4\JoinStreak\commands\subs;
 
-use usy4\AboutMe\libs\CortexPE\Commando\BaseSubCommand;
+use CortexPE\Commando\BaseSubCommand;
 use pocketmine\command\CommandSender;
 
-use usy4\AboutMe\commands\TargetPlayerArgument;
-use usy4\AboutMe\Main;
+use usy4\JoinStreak\commands\TargetPlayerArgument;
+use usy4\JoinStreak\Main;
 
 class ReadSubCommand extends BaseSubCommand {
 
