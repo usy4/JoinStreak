@@ -1,0 +1,12 @@
+---
+name: JoinStreak
+author: usy4
+api:
+- 4.0.0
+version: 1.0.0
+main: usy4\JoinStreak\Main
+descriptions: Keep track of player's join streaks on your PocketMine-MP server, similar to the snapchat streak feature.
+permissions:
+  joinstreak.command:
+    default: true
+...
