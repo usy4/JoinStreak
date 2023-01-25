@@ -18,7 +18,7 @@ class MySubCommand extends BaseSubCommand {
         $config = Main::$config;
         if($config->exists($name)){
             $streak = $config->get($name);
-            $sender->sendMessage("§7Your join streak is §c$streak§7 days.");
+            $sender->sendMessage("§7Your join streak is §c$streak §7days.");
         } else {
             $sender->sendMessage("§7You have no join streak yet.");
         }
