@@ -20,7 +20,7 @@ class TopSubCommand extends BaseSubCommand {
         $sender->sendMessage("§7Top 5 players with the highest join streaks:");
         $rank = 1;
         foreach($top_streaks as $name => $streak) {
-            $sender->sendMessage("§7#$rank. §f$name: §c$streak§7 days");
+            $sender->sendMessage("§7#$rank. §f$name: §c$streak §7days");
             $rank++;
         }
     }
