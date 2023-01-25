@@ -19,9 +19,8 @@ class EventListener implements Listener {
             $streak = $config->get($name);
             $last_join = $config->get($name . "_last_join");
             $now = time();
-            $date_now = date("Y-m-d", $now);
-            $date_last = date("Y-m-d", $last_join);
-            if($date_now === $date_last) {  // check if last join date is the same as today
+            $diff = $now - $last_join;
+            if($diff < 86400) { // check if last join was within the last 24 hours
                 $streak++;
                 $config->set($name, $streak);
                 $player->sendMessage("§7Welcome back! Your join streak is now §c$streak §7days.");
