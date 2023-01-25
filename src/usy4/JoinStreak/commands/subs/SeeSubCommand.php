@@ -8,7 +8,7 @@ use pocketmine\command\CommandSender;
 use usy4\JoinStreak\commands\TargetPlayerArgument;
 use usy4\JoinStreak\Main;
 
-class ReadSubCommand extends BaseSubCommand {
+class SeeSubCommand extends BaseSubCommand {
 
     protected function prepare(): void {
         $this->registerArgument(0, new TargetPlayerArgument(true));
