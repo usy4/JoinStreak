@@ -11,7 +11,7 @@ use usy4\JoinStreak\Main;
 
 class EventListener implements Listener {
 
-     public function onJoin(PlayerJoinEvent $event){
+    public function onJoin(PlayerJoinEvent $event){
         $player = $event->getPlayer();
         $name = $player->getName();
         $config = Main::$config;
@@ -19,8 +19,9 @@ class EventListener implements Listener {
             $streak = $config->get($name);
             $last_join = $config->get($name . "_last_join");
             $now = time();
-            $time_diff = $now - $last_join;
-            if($time_diff <= 86400){  // 86400 seconds in a day :O
+            $date_now = date("Y-m-d", $now);
+            $date_last = date("Y-m-d", $last_join);
+            if($date_now === $date_last) {  // check if last join date is the same as today
                 $streak++;
                 $config->set($name, $streak);
                 $player->sendMessage("§7Welcome back! Your join streak is now §c$streak §7days.");
