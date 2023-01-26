@@ -11,14 +11,6 @@ use usy4\JoinStreak\Main;
 
 class EventListener implements Listener {
 
-    public function onEnable(){
-        $this->getServer()->getPluginManager()->registerEvents($this, $this);
-        if(!is_dir($this->getDataFolder())){
-            @mkdir($this->getDataFolder());
-        }
-        $this->saveDefaultConfig();
-    }
-
     public function onJoin(PlayerJoinEvent $event){
         $player = $event->getPlayer();
         $name = $player->getName();
