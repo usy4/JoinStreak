@@ -2,7 +2,7 @@
 Keep track of player's join streaks on your PocketMine-MP server, similar to the snapchat streak feature.
 # How to use
 Usage: `/joinstreak <top/see(player)/my>`
-# Features:
+# Features
 Track the number of consecutive days a player has joined the server.
 Reset the join streak if a player hasn't joined in over 24 hours.
 See a player's own join streak or another player's join streak.
